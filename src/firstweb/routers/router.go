@@ -15,6 +15,8 @@ func init() {
     beego.Router("/login",&controllers.LoginController{})
     beego.Router("/say",&controllers.ChatRoomController{},"*:Say")
     beego.Router("/chat",&controllers.ChatRoomController{},"*:Chat")
+    beego.Router("/welcome",&controllers.ChatRoomController{},"*:Welcome")
+    beego.Router("/wechat",&controllers.WeChatController{})
 }
 
 
